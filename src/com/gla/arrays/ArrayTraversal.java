@@ -8,10 +8,10 @@ public class ArrayTraversal {
 
         int[] arr = new int[5];
         for(int i=0;i<5;i++){
-             arr[i] = input.nextInt();
+            arr[i] = input.nextInt();
         }
         for(int i=0;i<5;i++){
-            System.out.println(arr[i]+ " ");
+            System.out.print("arrays " + arr[i]);
         }
     }
 }
