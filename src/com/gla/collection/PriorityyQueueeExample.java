@@ -13,7 +13,7 @@ public class PriorityyQueueeExample {
         pq.offer(89);
         System.out.println(pq);
         System.out.println(pq.element());
-        pq.poll();
+        pq.poll();  //  the top element
         System.out.println(pq);
     }
 }

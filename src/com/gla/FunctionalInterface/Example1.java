@@ -22,17 +22,21 @@ public class Example1 {
 
         Employee obj2 = () -> "Software Engineer";
         System.out.println(obj2.getName());
+
+
+        Runnable obj3 = () -> {
+
+            for (int i = 0; i <= 10; i++) {
+                System.out.println("Thread" + i);
+            }
+        };
+        Thread t = new Thread(obj3);
+        t.start();
     };
 
-    Runnable obj3 = () -> {
-        for (int i = 0; i <= 10; i++) {
-            System.out.println("Thread" + i);
-        }
-    };
-    Thread t = new Thread(obj3);
-    t.start();
 }
-}
+
+
 
 
 

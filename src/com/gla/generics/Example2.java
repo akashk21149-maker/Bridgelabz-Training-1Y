@@ -3,6 +3,7 @@ import java.util.ArrayList;
 class Car<T>{    // make any class in generic class
     T var1;
     T var2;
+    T var3;
 }
 public class Example2 {
     public static void main(String[] args) {
@@ -11,8 +12,10 @@ public class Example2 {
         Car<Integer> car = new Car<>();
          car.var1 = 2000;
          car.var2 = 3000;
-
+         car.var3 = car.var1 + car.var2;
          System.out.println(car.var1);
         System.out.println(car.var2);
+        System.out.println(car.var3);
+
     }
 }

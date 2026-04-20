@@ -10,6 +10,7 @@ public class QueueeExample {
 
         System.out.println(q.peek());
         System.out.println(q.element());
+        System.out.println(q);
 
         //   q.remove();
 
